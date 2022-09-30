@@ -50,3 +50,19 @@ aspoň jednu podmínku if a funkci print(). Dodržte správné odsazování kód
 Do konzole vypište nejprve docstring vaší funkce a potom zavolejte funkci samotnou.   
 """
 
+#CUSTOM FUNKCE
+def funkce(x):
+    a = 0
+    b = 0
+    c = 0
+    for e in x:
+        if e == "a":
+            a += 1
+        elif e == "b":
+            b += 1
+        else:
+            c += 1
+    print(f"A = {a} B = {b} C = {c}")
+
+funkce("aabcbcabbcacabbcabbcabcabbcabacbbacbcabbcabcabbcabacbabcbcabacbca")
+

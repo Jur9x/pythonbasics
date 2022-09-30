@@ -75,3 +75,31 @@ Použijte vhodné moduly v Pythonu (včetně jejich případné instalace) k tom
 K řešení prvního úkolu je možné doporučit importovat interní modul datetime
 Řešení dalších dvou úkolů můžete odvodit z příkladů v dokumentaci k externímu modulu dateutil - viz https://pypi.org/project/python-dateutil/
 """
+### datum a cas ###
+
+from datetime import datetime
+
+print('date & time: ' + str(datetime.now()))
+
+#nebo
+
+from datetime import date
+from time import localtime, strftime
+
+print('date: ' + str(date.today()))
+print('time: ' + strftime("%H:%M:%S", localtime()))
+
+### velikonoce v pristich 5 letech ###
+
+from dateutil.easter import easter
+
+for i in range(5):
+    print('easter ' + str(2023 + i) + ': ' + str(easter(2023+i)))
+
+### stedry den v nedeli ###
+
+for i in range(7):
+    if date(2022+i, 12, 24).weekday() == 6:
+        break
+
+print('year where christmas eve is on sunday: ' + str(2022+i))

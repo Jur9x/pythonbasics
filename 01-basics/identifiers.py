@@ -7,6 +7,7 @@ V Pythonu verze 3.7 je 33 klíčových slov; tento počet se může v různých 
 Klíčová slova jsou v Pythonu case sensitive.
 Všechna klíčová slova s výjimkou True, False a None jsou psána malými písmeny.
 '''
+I = 007
 
 # Výpis jednořádkového řetězce v Pythonu
 print('Přehled klíčových slov v jazyce Python')
@@ -47,10 +48,10 @@ komentáře, proč byl identifikátor použit nesprávně. Navrhněte pod koment
 import_from = 'China'
 
 x = 0
-global = 1
+#global = 1 pouzito klicove slovo
 PI = 3.14
 city = "Opava"
-hilda@sspu-opava.cz = 'Hilda Dokonalá'
+#hilda@sspu-opava.cz = 'Hilda Dokonalá' spatne znaky jako tecka atd.
 password2 = 'TajneHeslo'
-007agent = 'James Bond'
+#007agent = 'James Bond' cisla tam byt nemuzou na zacatku
 
