@@ -158,3 +158,37 @@ funkční kód, tím lepší).
 3. Vytvořte funkci, která vygeneruje náhodná hesla pro počet osob zadaný v parametru tak, aby heslo začínalo
    3 velkými písmeny, pokračovalo 3 malými písmeny, jedním speciálním znakem (-/+*) a končilo 3 náhodnými číslicemi.
 '''
+# 1
+from dateutil.parser import parse
+import random
+date = '12.10.2020'
+print("datum: " + parse(date).strftime('%Y-%m-%d'))
+# 2
+s = "To je promenna v Pythonu"
+def toCamel1(s):
+    temp1 = s.title().replace(" ", "")
+    temp2 = s[0].lower()
+    output = temp2 + temp1[1:]
+    return output
+def pr(arg):
+    print(arg.lower().replace(" ", "_"))
+    print(toCamel1(arg))
+
+pr(s)
+# 3
+mala = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
+znaky = ["-", "/", "+", "*"]
+cisla = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
+
+def fu(r):
+    for x in range(r):
+        temp = ""
+        for y in range(3):
+            temp += random.choice(mala).upper()
+        for y in range(3):
+            temp += random.choice(mala)
+        temp += random.choice(znaky)
+        for y in range(3):
+            temp += random.choice(cisla)
+        print(temp)
+fu(5)
