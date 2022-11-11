@@ -5,8 +5,8 @@ klíč (angl. key) a hodnotu (angl. value).
 Každému klíči je přiřazena jedna hodnota.
 '''
 
-# Collection which is unordered, changeable and indexed.
-# In Python dictionaries are written with curly brackets, and they have keys and values.
+# Collection which is unordered, changeable and indexed. Kolekce která není seřazena, měnitelné a indexované
+# In Python dictionaries are written with curly brackets, and they have keys and values. V jazyce Python se slovníky zapisují pomocí kudrnatých závorek a mají klíče a hodnoty.
 car = {
   'brand': 'Ford',
   'model': 'Mustang',
